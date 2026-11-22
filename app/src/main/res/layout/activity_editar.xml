@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp" android:paddingTop="24dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Editar aluno" android:textSize="22sp" android:textStyle="bold" />
+
+        <include layout="@layout/form_aluno" />
+
+        <Button android:id="@+id/btnSalvar" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Salvar alterações" android:layout_marginTop="16dp" />
+        <Button android:id="@+id/btnExcluir" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Excluir aluno"
+            android:backgroundTint="#C62828" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btnVoltar" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Voltar" />
+    </LinearLayout>
+</ScrollView>

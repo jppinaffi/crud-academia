@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText android:id="@+id/etNome" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Nome completo *" android:inputType="textPersonName|textCapWords" />
+    <EditText android:id="@+id/etCpf" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="CPF (somente números) *" android:inputType="number" android:maxLength="14" />
+    <EditText android:id="@+id/etTelefone" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Telefone *" android:inputType="phone" />
+    <EditText android:id="@+id/etEmail" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="E-mail" android:inputType="textEmailAddress" />
+    <EditText android:id="@+id/etEndereco" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Endereço" android:inputType="textPostalAddress" />
+    <EditText android:id="@+id/etNascimento" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Data de nascimento * (toque para escolher)" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Modalidade" android:layout_marginTop="12dp" />
+    <Spinner android:id="@+id/spModalidade" android:layout_width="match_parent" android:layout_height="48dp" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tipo de plano" />
+    <Spinner android:id="@+id/spPlano" android:layout_width="match_parent" android:layout_height="48dp" />
+
+    <EditText android:id="@+id/etValor" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Valor da mensalidade (R$) *" android:inputType="numberDecimal" />
+    <EditText android:id="@+id/etMatricula" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Data da matrícula * (toque para escolher)" />
+    <EditText android:id="@+id/etValidade" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Validade do plano * (toque para escolher)" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Situação" android:layout_marginTop="12dp" />
+    <Spinner android:id="@+id/spSituacao" android:layout_width="match_parent" android:layout_height="48dp" />
+</LinearLayout>
